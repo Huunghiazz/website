@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>amazing</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var loader = function() {
+    setTimeout(function() {
+        $('#loader').css({ 'opacity': 0, 'visibility':'hidden' });
+    }, 1000);
+};
+$(function(){
+    loader();
+});
+</script>
+
+        
+    </head>
+    
+    <body>
+     
+     
+
+        <div id="loader">
+            <div class="circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div> 
+                 
+                <video id="video1" width="600">
+                    <source src="../video/video.mp4" type="video/mp4">                                
+                </video>             
+             </div> 
+             <script> 
+                var myVideo = document.getElementById("video1"); 
+                
+                function playPause() { 
+                  if (myVideo.paused) 
+                    myVideo.play(); 
+                  else 
+                    myVideo.pause(); 
+                } 
+                
+                </script>                              
+            <div class="header">             
+                <button type="button" onclick="location.href='index/index.html';" class="bottom1" >Happy</button>
+                <button type="button" onclick="location.href='index2/index.html';" class="bottom2" >Sad</button>
+                <button class="bottom3" onclick="playPause()">Play/Pause</button>
+            
+                
+            </div>                    
+        </div>
+        
+
+    </body>
+</html>

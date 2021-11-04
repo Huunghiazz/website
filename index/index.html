@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nhincc</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            //<![CDATA[
+            $(window).bind("load", function() {
+                jQuery("#status").fadeOut();
+                jQuery("#loader").fadeOut();
+            });
+            //]]>
+        </script>         
+    </head>
+    <body>
+        <div id='status'></div>
+        <div id='loader'></div>
+        <div class="container">
+            <div class="header">                                          
+                 
+                    <video id="video" width="540" height="720" autoplay>
+                        <source src="../video/clip.mp4" type="video/mp4">                                 
+                    </video>             
+                 
+
+                
+            </div>                    
+        </div>
+       
+
+    </body>
+</html>
